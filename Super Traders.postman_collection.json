@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "f432e924-cc40-4379-80c2-4c2a03ad688b",
+		"name": "Super Traders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Share",
+			"item": [
+				{
+					"name": "Get Share",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "ANhaF98gRte",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "SuperAuthTradersName",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "shareSymbol",
+									"value": "BTC",
+									"type": "text"
+								},
+								{
+									"key": "shareName",
+									"value": "Bitcoin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "companyName",
+									"value": "Satoshi Nakamoto Company",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shareTotalQty",
+									"value": "99",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shareUnitPrice",
+									"value": "11",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-share/v1.0/getShare",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-share",
+								"v1.0",
+								"getShare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Share",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "ANhaF98gRte",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "SuperAuthTradersName",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "shareSymbol",
+									"value": "BTC",
+									"type": "text"
+								},
+								{
+									"key": "shareName",
+									"value": "Bitcoin",
+									"type": "text"
+								},
+								{
+									"key": "companyName",
+									"value": "Satoshi Nakamoto Company",
+									"type": "text"
+								},
+								{
+									"key": "shareTotalQty",
+									"value": "99",
+									"type": "text"
+								},
+								{
+									"key": "shareUnitPrice",
+									"value": "11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-share/v1.0/createShare",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-share",
+								"v1.0",
+								"createShare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Price",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "ANhaF98gRte",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "SuperAuthTradersName",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "shareSymbol",
+									"value": "BTC",
+									"type": "text"
+								},
+								{
+									"key": "shareName",
+									"value": "Bitcoin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "companyName",
+									"value": "Satoshi Nakamoto Company",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shareTotalQty",
+									"value": "99",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shareUnitPrice",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-share/v1.0/updateShare",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-share",
+								"v1.0",
+								"updateShare"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customerNameSurname",
+									"value": "Alex ",
+									"type": "text"
+								},
+								{
+									"key": "customerUsername",
+									"value": "ALX",
+									"type": "text"
+								},
+								{
+									"key": "totalBudget",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-customer/v1.0/createCustomer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-customer",
+								"v1.0",
+								"createCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customerUsername",
+									"value": "ALX",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-customer/v1.0/getCustomer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-customer",
+								"v1.0",
+								"getCustomer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Market",
+			"item": [
+				{
+					"name": "Buy Share",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "shareSymbol",
+									"value": "BTC",
+									"type": "text"
+								},
+								{
+									"key": "shareBuyQtyCustomer",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "customerUsername",
+									"value": "ALX",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-market/v1.0/buyShare",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-market",
+								"v1.0",
+								"buyShare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Saller Share",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "shareSymbol",
+									"value": "BTC",
+									"type": "text"
+								},
+								{
+									"key": "shareBuyQtyCustomer",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "customerUsername",
+									"value": "ALX",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/supertraders-market/v1.0/buyShare",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"supertraders-market",
+								"v1.0",
+								"buyShare"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Saller Share",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "ANhaF98gRte",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "SuperAuthTradersName",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": ""
+		}
+	]
+}

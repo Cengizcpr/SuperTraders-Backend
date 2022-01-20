@@ -1,0 +1,20 @@
+{
+  "name": "SuperTraders",
+  "version": "1.0.0",
+  "description": "Super Traders Backend Nodejs & MongoDB & Express.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "node server.js"
+  },
+  "author": "copurcengizhan@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15",
+    "npm": "^8.3.1"
+  }
+}
