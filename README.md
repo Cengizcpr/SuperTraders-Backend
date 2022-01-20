@@ -1,9 +1,5 @@
 # SuperTraders-Backend
 
-https://www.getpostman.com/collections/42750989b5b7623a7ac6
-
-[![CircleCI](https://img.shields.io/circleci/project/github/contentful/the-example-app.nodejs.svg)](https://circleci.com/gh/contentful/the-example-app.nodejs)
-
 ## Requirements
 
 * Node 8
@@ -16,8 +12,8 @@ Without any changes, this app is connected to a Contentful space with read-only 
 Clone the repo and install the dependencies.
 
 ```bash
-git clone https://github.com/contentful/the-example-app.nodejs.git
-cd the-example-app.nodejs
+git clone https://github.com/Cengizcpr/SuperTraders-Backend.git
+cd SuperTraders-Backend
 ```
 
 ```bash
@@ -30,9 +26,12 @@ yarn
 To start the express server, run the following
 
 ```bash
-npm run start:dev
+npm run start
 ```
 
 Open [http://localhost:8002](http://localhost:8002) and take a look around.
+
+## Postman
+https://www.getpostman.com/collections/42750989b5b7623a7ac6
 
 
